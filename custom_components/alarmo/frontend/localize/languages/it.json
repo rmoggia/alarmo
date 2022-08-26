@@ -151,7 +151,7 @@
         },
         "disable_master": {
           "title": "Disabilita Master?",
-          "description": "Sei sicuro che vuoi rimuovere l'allarme master? Questa area contiene {automations} automazioni, che verranno eliminate con questa azione."
+          "description": "Sei sicuro che vuoi rimuovere l'allarme Master? Questa area contiene {automations} automazioni, che verranno eliminate con questa azione."
         }
       }
     },
@@ -169,7 +169,7 @@
         },
         "add_sensors": {
           "title": "Aggiungi Sensori",
-          "description": "Aggiungi più sensori. Assicurati che i sensori abbiano un friendly_name (nome amichevole), in modo da identificarli più facilmente.",
+          "description": "Aggiungi più sensori. Assicurati che i sensori abbiano un friendly_name (nome facile da ricordare), in modo da identificarli più facilmente.",
           "no_items": "Non ci sono entità disponibili che possono essere configurate con l'allarme. Assicurati di includere entità del tipo binary_sensor (sensore binario).",
           "table": {
             "type": "Tipologia Innesco"
@@ -192,7 +192,7 @@
               "description": "Raggruppa con altri sensori per inneschi combinati."
             },
             "device_type": {
-              "heading": "Tipologia Dispositivo",
+              "heading": "Tipologia dispositivo",
               "description": "Scegli la tipologia del dispositivo per applicare le impostazioni appropriate.",
               "choose": {
                 "door": {
@@ -209,7 +209,7 @@
                 },
                 "tamper": {
                   "name": "Vibrazione",
-                  "description": "Rilaveamento di vibrazione, rottura vetri, ecc."
+                  "description": "Rilevamento di vibrazione, rottura vetri, ecc."
                 },
                 "environmental": {
                   "name": "Ambientale",
@@ -229,11 +229,11 @@
               "description": "Modalità di allarme in cui il sensore risulta collegato."
             },
             "arm_on_close": {
-              "heading": "Attiva dopo chisura after closing",
+              "heading": "Attiva dopo chisura",
               "description": "Dopo la disattivazione di questo sensore il ritardo rimanente verrà automaticamente skippato."
             },
             "use_exit_delay": {
-              "heading": "Usa Ritardo d'uscita",
+              "heading": "Usa ritardo d'uscita",
               "description": "Sensore che può rimanre attivo mentre il ritardo di uscita è in corso."
             },
             "use_entry_delay": {
@@ -309,11 +309,11 @@
           "description": "Modifica le impostazioni dei codici.",
           "fields": {
             "code_arm_required": {
-              "heading": "Usa codice d'attivazione",
+              "heading": "Usa il codice d'attivazione",
               "description": "Richiedi un codice per attivare l'allarme"
             },
             "code_disarm_required": {
-              "heading": "Usa codice di disattivazione",
+              "heading": "Usa il codice di disattivazione",
               "description": "Richiedi un codice per disattivare l'allarme"
             },
             "code_format": {
@@ -368,7 +368,7 @@
           "errors": {
             "no_name": "Non hai inserito il nome.",
             "no_code": "Il codice deve avere almeno 4 numeri o caratteri.",
-            "code_mismatch": "Il codice scelto non combacia, verifica il codice inserito."
+            "code_mismatch": "Il codice scelto non conicide, verifica il codice inserito."
           }
         },
         "edit_user": {
@@ -430,8 +430,8 @@
                   "description": "L'allarme è innescato"
                 },
                 "untriggered": {
-                  "name": "Alarm not longer triggered",
-                  "description": "The triggered state of the alarm has ended"
+                  "name": "Allarme non più attivo",
+                  "description": "Lo stato di allarme attivato è terminato"
                 },
                 "arm_failure": {
                   "name": "Impossibile attivare",
@@ -458,19 +458,19 @@
             "message": {
               "heading": "Messaggio",
               "description": "Contenuto del messaggio di notifica",
-              "insert_wildcard": "Inserisci wildcard",
+              "insert_wildcard": "Inserisci carattere jolly (wildcard"),
               "placeholders": {
                 "armed": "L'allarme è impostato in {{arm_mode}}",
-                "disarmed": "L'allarme è disattivatoF",
-                "triggered": "L'allarme è stato innescato! Causa: {{open_sensors}}.",
-                "untriggered": "The alarm is not longer triggered.",
+                "disarmed": "L'allarme è stato disattivato",
+                "triggered": "L'allarme è scattato! Causa: {{open_sensors}}.",
+                "untriggered": "L'allarme non è più attivo.",
                 "arm_failure": "L'allarme non può essere attivato adesso. Causa: {{open_sensors}}.",
                 "arming": "L'allarme verrà attivato a breve, per favore lascia la casa.",
-                "pending": "L'allarme sta per essere innescato, disattivalo velocemente!"
+                "pending": "L'allarme sta per scattare, disattivalo velocemente!"
               }
             },
             "open_sensors_format": {
-              "heading": "Formato per la wildcard open_sensors",
+              "heading": "Formato per il carattere jolly (wildcard) open_sensors",
               "description": "Scegli quale informazione è inserita nel messaggio",
               "options": {
                 "default": "Nomi e stati",
@@ -478,7 +478,7 @@
               }
             },
             "arm_mode_format": {
-              "heading": "Traduzione per le wildcard per arm_mode",
+              "heading": "Traduzione per i caratteri jolly (wildcard) per arm_mode",
               "description": "Scegli la lingua in cui è scritto il messaggio"
             },
             "target": {
@@ -539,7 +539,7 @@
                 "armed": "Imposta {entity} su {state} in attivazione",
                 "disarmed": "Imposta {entity} su {state} in disattivazione",
                 "triggered": "Imposta {entity} su {state} in innesco",
-                "untriggered": "Set {entity} to {state} when triggering stops",
+                "untriggered": "Imposta {entity} a {state} quando l'attivazione si ferma",
                 "arm_failure": "Imposta {entity} su {state} quando è impossibile attivare",
                 "arming": "Imposta {entity} su {state} in uscita",
                 "pending": "Imposta {entity} su {state} in entrata"
